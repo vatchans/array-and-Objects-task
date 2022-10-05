@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var personal_information=[{
+            "Name":"A.Sree Vatchan",
+            "age":21,
+            "Ph_no":123457789,
+            "Address":"xyz",
+        }];
+        //for loop
+        for(var i=0;i<personal_information.length;i++){
+            var obj=personal_information[i]
+            console.log(obj.Name)
+        }
+        //for of loop
+        for(var k of personal_information){
+            console.log(k.age)
+        }
+        //foreach loop
+        personal_information.forEach(function(obj) { console.log(obj.Ph_no); });
+        //for in loop
+        for (var k in personal_information) {
+        if (personal_information.hasOwnProperty(k)) {
+        console.log(personal_information[k].Address);}
+        }
+    </script>
+</body>
+</html>
